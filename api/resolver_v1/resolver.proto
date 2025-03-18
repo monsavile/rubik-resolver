@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package resolver_v1;
+
+option go_package = "github.com/monsavile/rubik-resolver/pkg/resolver_v1;resolver_v1";
+
+service ResolverV1 {
+  rpc Resolve(ResolveRequest) returns (ResolveResponse);
+}
+
+message ResolveRequest {
+  string cube = 1;
+}
+
+message ResolveResponse {
+  string cube = 1;
+}

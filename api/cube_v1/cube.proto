@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package cube_v1;
+
+option go_package = "github.com/monsavile/rubik-scrumbler/pkg/cube_v1;cube_v1";
