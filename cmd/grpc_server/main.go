@@ -20,7 +20,7 @@ type server struct {
 	resolverV1.UnimplementedResolverV1Server
 }
 
-func (s *server) Scrumble(ctx context.Context, req *resolverV1.ResolveRequest) (*resolverV1.ResolveResponse, error) {
+func (s *server) Resolve(ctx context.Context, req *resolverV1.ResolveRequest) (*resolverV1.ResolveResponse, error) {
 	return &resolverV1.ResolveResponse{
 		Cube: "test",
 	}, nil
